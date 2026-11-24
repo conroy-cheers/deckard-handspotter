@@ -9,4 +9,16 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
       # TODO: Switch flake checks to DeterminateSystems/determinate-nix-action for Nix setup.
       - uses: cachix/install-nix-action@75c75c31ebece974e48ebc36b4ad125bd97bd97b
-      - run: nix flake check --option builders ''
+      - name: Allow Chromium to create its sandbox
+        run: |
+          browser=$(nix eval --raw --impure --expr '
+            let pinned = (builtins.getFlake (toString ./.)).inputs.nixpkgs;
+            in pinned.legacyPackages.x86_64-linux.chromium.browser.outPath + "/libexec/chromium/chromium"
+          ')
+          sudo apparmor_parser --replace <<EOF
+          abi <abi/4.0>,
+          profile handspotter-chromium "$browser" flags=(unconfined) {
+            userns,
+          }
+          EOF
+      - run: nix flake check -L --option builders ''
