@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steam Frame camera mount</title>
+<style>
+  :root { color-scheme:dark; font: 14px system-ui,sans-serif; color:#e9edf2; background:#0e141c; }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  header { padding:20px 24px 17px; border-bottom:1px solid #293645; }
+  h1 { font-size:clamp(24px,3vw,34px); letter-spacing:-.035em; margin:0 0 5px; font-weight:650; }
+  p { margin:0; line-height:1.45; color:#b2c0d2; }
+  main { display:grid; grid-template-columns:minmax(0,1fr) 365px; min-height:750px; }
+  #viewport { position:relative; overflow:hidden; height: calc(100dvh - 96px); min-height:540px; background:#151f2b; }
+  canvas { display:block; width:100%; height:100%; touch-action:none; }
+  #labels { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+  .marker { position:absolute; white-space:nowrap; background:#0f1723ec; border:1px solid currentColor;
+    padding:3px 7px; border-radius:5px; transform:translate(8px,-50%); font-size:11px; }
+  aside { border-left:1px solid #293645; padding:16px 18px; background:#111a24; }
+  h2 { margin:17px 0 8px; font-size:14px; font-weight:650; }
+  h2:first-child { margin-top:0; }
+  label { display:block; }
+  select, button { color:inherit; background:#1a2735; border:1px solid #38495d; border-radius:6px;
+    padding:7px 9px; font:inherit; }
+  select { width:100%; margin:5px 0 10px; }
+  button { cursor:pointer; }
+  button:hover { background:#24394e; }
+  :focus-visible { outline:2px solid #6ed5dc; outline-offset:2px; }
+  .row { display:flex; gap:7px; }
+  .range { display:grid; grid-template-columns:40px 1fr 48px; align-items:center; gap:8px; margin:6px 0; }
+  input { accent-color:#70d8df; }
+  output { text-align:right; font-variant-numeric:tabular-nums; }
+  .overlays { display:flex; flex-wrap:wrap; gap:7px 11px; margin-top:11px; font-size:12px; }
+  .overlays label { display:inline-flex; align-items:center; }
+  small { display:block; font-size:11px; line-height:1.45; color:#aebed2; }
+  table { width:100%; border-collapse:collapse; font-size:11px; font-variant-numeric:tabular-nums; margin:6px 0; }
+  th, td { padding:7px 2px; text-align:right; border-bottom:1px solid #273545; white-space:nowrap; }
+  th:first-child, td:first-child { text-align:left; }
+  th { font-weight:550; color:#adbed2; }
+  .tips { position:absolute; bottom:12px; left:15px; font-size:12px; color:#c7d4e2;
+    background:#131c29e8; padding:5px 8px; border-radius:5px; pointer-events:none; }
+  #error { position:absolute; inset:45% 20% auto; background:#281c24; color:#ffd2d7; padding:12px; }
+  @media(max-width:800px) { main { grid-template-columns:1fr; } #viewport { height:64dvh; min-height:330px; } aside { border-left:0; } }
+</style>
+<script type="importmap">HEAD_VIEWER_IMPORT_MAP</script>
+<header>
+  <h1>Steam Frame camera mount</h1>
+  <p>Inspect the synthetic camera placement on the SOMA-X head and compare it with the calibrated OpenVR axes.</p>
+</header>
+<main>
+  <div id="viewport" aria-label="Interactive three-dimensional camera mount">
+    <div id="labels" aria-hidden="true"></div>
+    <div class="tips">Drag to orbit · Scroll to zoom · Right-drag to pan</div>
+    <div id="error" role="alert" hidden></div>
+  </div>
+  <aside>
+    <h2>Camera attachment</h2>
+    <label for="mount">Orientation</label>
+    <select id="mount">
+      <option value="renderer">As rendered</option>
+      <option value="openvr">OpenVR axes, same front midpoint</option>
+    </select>
+    <small id="placement"></small>
+    <h2>Head pose</h2>
+    <label for="body">SOMA-X scene</label>
+    <select id="body"></select>
+    <div class="range"><label for="yaw">Yaw</label><input id="yaw" type="range" min="-85" max="85" step="any" value="0"><output for="yaw"></output></div>
+    <div class="range"><label for="pitch">Pitch</label><input id="pitch" type="range" min="-76" max="70" step="any" value="0"><output for="pitch"></output></div>
+    <div class="range"><label for="roll">Roll</label><input id="roll" type="range" min="-22" max="22" step="any" value="0"><output for="roll"></output></div>
+    <div class="row"><button id="neutral">Neutral pose</button><button id="recorded">Recorded pose</button></div>
+    <label for="weights" style="margin-top:10px">Head deformation</label>
+    <select id="weights">
+      <option value="head_weights">As rendered</option>
+      <option value="neutral_weights">Neutral-mesh head region</option>
+    </select>
+    <small id="deformation"></small>
+    <h2>View</h2>
+    <div class="row"><button id="corner">Three-quarter</button><button id="profile">Profile</button><button id="front">Front</button><button id="top">Top</button></div>
+    <div class="overlays">
+      <label><input id="rims" type="checkbox">Sensor outlines</label>
+      <label><input id="arms" type="checkbox">Arm joints</label>
+      <label><input id="skin" type="checkbox">Arm surfaces</label>
+      <label><input id="ghost" type="checkbox">Translucent mesh</label>
+      <label><input id="markers" type="checkbox" checked>Labels</label>
+    </div>
+    <h2>Tracking cameras</h2>
+    <small>Neutral center relative to the modeled eye midpoint, in mm. Yaw is right-positive and pitch is up-positive.</small>
+    <table><thead><tr><th>Sensor</th><th>X</th><th>Y</th><th>Z</th><th>Yaw</th><th>Pitch</th></tr></thead><tbody id="cameras"></tbody></table>
+    <small>+X wearer’s right · +Y up · −Z forward. Colored arrows show each sensor’s +Z optical axis. The head mesh is cropped below the chest.</small>
+  </aside>
+</main>
+<script id="data" type="application/json">HEAD_VIEWER_DATA</script>
+<script type="module">
+HEAD_VIEWER_SCRIPT
+</script>
+</html>

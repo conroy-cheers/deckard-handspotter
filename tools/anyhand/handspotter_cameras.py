@@ -1,0 +1,1 @@
+../../lib/cameras/handspotter_cameras.py

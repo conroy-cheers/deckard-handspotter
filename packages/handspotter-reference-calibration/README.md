@@ -1,0 +1,3 @@
+The reference data comes from the Steam Frame calibration used for Handspotter synthetic rendering. Both outputs derive from the same four camera records and CAD alignment via the repository's calibration adapter. The rig uses the leveled stereo-pair frame. The OpenVR file expresses the camera poses in the HMD frame.
+
+The original XRService calibration has SHA-256 `e73c027833efc9079d6edddf1720fa7d310c2b1f22796dad5298811f3a2f2d65`. The original device configuration has SHA-256 `a5328e85d2f3dc83804d0e7bc047dd52f37735335d2c393f7710d1b9dc46064a`. The checked-in inputs contain only the geometry, KB4 optics and alignment used by the exporter.

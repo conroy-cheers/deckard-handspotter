@@ -1,0 +1,1 @@
+../../lib/cameras/frame_camera.py

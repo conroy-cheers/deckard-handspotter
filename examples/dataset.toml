@@ -1,0 +1,31 @@
+[[recorded]]
+split = "training"
+session = "session-a"
+workspace = "session-a-labels"
+xrservice = "calibration/xrservice.json"
+device_config = "calibration/device_config.json"
+
+[[recorded]]
+split = "validation"
+session = "session-b"
+workspace = "session-b-labels"
+xrservice = "calibration/xrservice.json"
+device_config = "calibration/device_config.json"
+
+[[recorded]]
+split = "test"
+session = "session-c"
+workspace = "session-c-labels"
+xrservice = "calibration/xrservice.json"
+device_config = "calibration/device_config.json"
+
+[[synthetic]]
+split = "training"
+xrservice = "calibration/xrservice.json"
+device_config = "calibration/device_config.json"
+preset = "procedural" # Or supply poses and topology for a detailed mesh bank.
+count = 24
+appearance_variation = true
+capture_noise = true
+seed = 899
+render_scale = 2

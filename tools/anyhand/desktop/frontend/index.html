@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; frame-src http://127.0.0.1:*; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'">
+  <title>AnyHand Studio</title>
+  <link rel="stylesheet" href="./studio.css">
+  <script type="module" src="./batch.mjs"></script>
+</head>
+<body>
+  <section id="batch-workspace">
+    <header><h1>Batch renderer</h1><div class="row"><button id="reroll" title="Choose a new seed for the preview and batch">Reroll</button><button id="open-job">Open job…</button><button id="save-job">Save job…</button></div></header>
+    <div class="configuration">
+    <section id="live-panel" aria-label="Live scene preview">
+      <div class="preview-bar"><h2>Live viewport</h2><select id="live-mode" aria-label="Viewport mode"><option value="scene">3D scene</option><option value="detector">Detector inputs</option></select><label>Sample (zero-based) <input id="live-index" type="number" value="0" min="0" step="1"></label></div>
+      <div id="live-area"><iframe id="live-frame" title="Interactive render scene" hidden allow="webgpu" sandbox="allow-scripts allow-same-origin"></iframe><div id="live-detectors" hidden></div><p id="live-status" role="status"></p></div>
+      <p id="resolved-setup" aria-live="polite"></p>
+    </section>
+    <form id="render-form"><fieldset id="batch-controls"><legend>Render settings</legend><div id="primary-settings"></div><details><summary>Scene and capture settings</summary><div id="advanced-settings"></div></details><button id="run-job" type="submit">Render batch…</button></fieldset></form></div>
+    <p id="batch-status" role="status"></p>
+    <section id="batch-result" hidden><h2>Rendered samples</h2><div class="row"><label>Sample (zero-based) <input id="batch-index" type="number" min="0" value="0"></label><label>View <select id="batch-mode"><option value="detector">Detector input</option><option value="image">Camera image</option><option value="mask">Hand mask</option></select></label><label><input id="batch-boxes" type="checkbox">Hand boxes</label></div><div id="batch-views"></div></section>
+  </section>
+</body>
+</html>

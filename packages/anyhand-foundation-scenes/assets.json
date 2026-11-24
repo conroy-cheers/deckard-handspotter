@@ -1,0 +1,602 @@
+{
+  "bathroom/README": {
+    "host": "raw",
+    "hash": "sha256-SqIRIMwMBqzsXqHUHrobjIjlGqA3fojbrr/uWUoJHqw="
+  },
+  "bathroom/baseColor_1.jpg": {
+    "host": "media",
+    "hash": "sha256-9byxhnfnSgk+luK6o5Wlm9JlrqTMfP8nrgZE2/B+8T4="
+  },
+  "bathroom/baseColor_2.jpg": {
+    "host": "media",
+    "hash": "sha256-8S1zFuvWOnWWbzGiFPtti8pKuwuwUfk5qZ3mUyCoZaw="
+  },
+  "bathroom/baseColor_3.jpg": {
+    "host": "media",
+    "hash": "sha256-hO2EsIYs0zKYy3pHKyvZzQMWDgghsaXliMerkkEP4Hk="
+  },
+  "bathroom/baseColor_4.png": {
+    "host": "media",
+    "hash": "sha256-RN0rFxVT5yEKEcF1D4LhZnasVEh4y9KTUn8B99dYr2I="
+  },
+  "bathroom/baseColor_5.jpg": {
+    "host": "media",
+    "hash": "sha256-qmiTeFchNo/TK6tyM33lTpbJZzIAoqQxENIHlBm2RVg="
+  },
+  "bathroom/baseColor_6.jpg": {
+    "host": "media",
+    "hash": "sha256-nZH4OlskCkDi15PnxEYzkr2QQ3gISs0CyP4k5PTsWbw="
+  },
+  "bathroom/baseColor_7.png": {
+    "host": "media",
+    "hash": "sha256-mJ7PB4S95Egc4KW2OKar0aLRtuQsKDkZhdfNQqXeIC0="
+  },
+  "bathroom/baseColor_8.jpg": {
+    "host": "media",
+    "hash": "sha256-lpX2YDoQR5lTCo5kiODMLblKp/gZNyXDrwc+f6CyRwU="
+  },
+  "bathroom/bathroom.bin": {
+    "host": "media",
+    "hash": "sha256-5/Xiaop10CG04f3Mo/oign+kkxogWXo5HOD6CDMQC5Y="
+  },
+  "bathroom/bathroom.gltf": {
+    "host": "raw",
+    "hash": "sha256-HDcDNV8to2em70u5ZWmsOmt69n8SrJrWN7iuhNBOLlY="
+  },
+  "bedroom/README": {
+    "host": "raw",
+    "hash": "sha256-8D7VzkAplZd5zUKg7SVthOkEsMWcysyiKvlVioqJfME="
+  },
+  "bedroom/baseColor_1.jpg": {
+    "host": "media",
+    "hash": "sha256-2FJKaxCHt6LyvMHfVzB+Q8t0F62RhZXIGg/iwdROKLQ="
+  },
+  "bedroom/baseColor_2.jpg": {
+    "host": "media",
+    "hash": "sha256-C6gbZUAQJL3j7SMcvg2lNvrwqH7nvAbNtNXk6i5NMf0="
+  },
+  "bedroom/baseColor_3.jpg": {
+    "host": "media",
+    "hash": "sha256-HsRbNGm8t1PzSmgDhynnohuX+X0oAM3ivjmWYNUwHNE="
+  },
+  "bedroom/baseColor_4.png": {
+    "host": "media",
+    "hash": "sha256-cOiY5ExzHG6d+/79WqKDuMQJg29tJy+ijqU9pRmoYWQ="
+  },
+  "bedroom/bedroom.bin": {
+    "host": "media",
+    "hash": "sha256-zdPM0HQbEodDBqNgSnejNv6beNdkOqxuF4h2uP6/s/Q="
+  },
+  "bedroom/bedroom.gltf": {
+    "host": "raw",
+    "hash": "sha256-hYUhXDO2wRt5HW/R26qdMi+39gDkb78F2QFJRUpTbT0="
+  },
+  "classroom/README": {
+    "host": "raw",
+    "hash": "sha256-6ktBIcVedCEoBFIIqCoNbetJCKCSissbDGqqaNVoQX0="
+  },
+  "classroom/baseColor_1.jpg": {
+    "host": "media",
+    "hash": "sha256-9wXRLZu5cHzwHVIZU7t0wYCJuVSM0mFtILjrGqe+ve4="
+  },
+  "classroom/baseColor_2.jpg": {
+    "host": "media",
+    "hash": "sha256-MiwqBdiLem0h6NuEfLrhpqdh0l0ix8jydoiSbi83TrY="
+  },
+  "classroom/baseColor_3.jpg": {
+    "host": "media",
+    "hash": "sha256-lkVfbFbffpDhhFfn5JRgkYPBFwwa7la46VOm4WRp8xs="
+  },
+  "classroom/classroom.bin": {
+    "host": "media",
+    "hash": "sha256-inpTvsFahCzaJqrT6+XrCzdxMKtNe1HFVkINd7IKq9Y="
+  },
+  "classroom/classroom.gltf": {
+    "host": "raw",
+    "hash": "sha256-X8DBKiooZcw+sxtsv2rfE4RUj53Taw1cK8n23MyNKF4="
+  },
+  "dining-room/README": {
+    "host": "raw",
+    "hash": "sha256-6PrfWuf6TuhZgbK5QX87mgy5LLvXTd68XM3cPxiCQ1k="
+  },
+  "dining-room/baseColor_1.png": {
+    "host": "media",
+    "hash": "sha256-0er9LXoPnqPL0M9bYnHGfBsU9caUW3+sFSRhy6Wu3yI="
+  },
+  "dining-room/baseColor_2.jpg": {
+    "host": "media",
+    "hash": "sha256-asVeOzvz43wLzL+hpKj3MeSGC5Er7XBCv9A/PtJY9CY="
+  },
+  "dining-room/baseColor_3.jpg": {
+    "host": "media",
+    "hash": "sha256-W3o3wGc2pfq7yXX4QtvBV5olB4TWDvp05R9zwpcveEQ="
+  },
+  "dining-room/dining-room.bin": {
+    "host": "media",
+    "hash": "sha256-vaFMvG+mbRQXUpGtG5HnEcAAQz+fesy1UBon0wFm4hs="
+  },
+  "dining-room/dining-room.gltf": {
+    "host": "raw",
+    "hash": "sha256-H5gOfgOGbDAkswJrmcR79m/2yrrucq7TWOBLnNSE0c0="
+  },
+  "kitchen/README": {
+    "host": "raw",
+    "hash": "sha256-hBwDqJeLOGNv2PpM+EifBDYyKsbreOfH+o6Ca5V4Hgo="
+  },
+  "kitchen/baseColor_1.jpg": {
+    "host": "media",
+    "hash": "sha256-TL/NUpGrmzyBVQm5R8seljsfOVZNbIkicTJi3W/bXFk="
+  },
+  "kitchen/baseColor_10.jpg": {
+    "host": "media",
+    "hash": "sha256-Kta39FEOcXOKAH4ZsGJVc3I0aukyj5wlZWNGE27i02s="
+  },
+  "kitchen/baseColor_11.jpg": {
+    "host": "media",
+    "hash": "sha256-mQOfVtXeTHdGIfc5P/Rl1gb6e417oGODI3qOD0jFT+4="
+  },
+  "kitchen/baseColor_2.jpg": {
+    "host": "media",
+    "hash": "sha256-sZFlnhDkJ+p+tKRAufSSrA8EdewZ8om54/gW5Fs5+N8="
+  },
+  "kitchen/baseColor_3.jpg": {
+    "host": "media",
+    "hash": "sha256-d9r0eTovk5lCN3ap6YfuY9Umqjd/G9HAFw9xSB8mYgc="
+  },
+  "kitchen/baseColor_4.jpg": {
+    "host": "media",
+    "hash": "sha256-BnSzL3+Mlja4x9buYGO+2FJW5TuQdUrNMdOOvjvLaNU="
+  },
+  "kitchen/baseColor_5.png": {
+    "host": "media",
+    "hash": "sha256-1Gg1gmDFXGBDC+saKmQ9sWWOKlE2Od56lVXXpxuYwKM="
+  },
+  "kitchen/baseColor_6.png": {
+    "host": "media",
+    "hash": "sha256-ntIHtONt2+LNl67QLA2OiJNec6UiIGgtyscbjHlUE4U="
+  },
+  "kitchen/baseColor_7.jpg": {
+    "host": "media",
+    "hash": "sha256-E3PhJJxa5Z9WKYd6TMictj+Ernw3JYyMR8BX+xM0awI="
+  },
+  "kitchen/baseColor_8.jpg": {
+    "host": "media",
+    "hash": "sha256-P9i/grzlI3V8uVfaOei9PtLv/GJSzfOfPOO29l4YCUY="
+  },
+  "kitchen/baseColor_9.jpg": {
+    "host": "media",
+    "hash": "sha256-A7VPa5y0dTb2cIPPp6pDFUmQqECRX0ByOh5fRvFgDEI="
+  },
+  "kitchen/kitchen.bin": {
+    "host": "media",
+    "hash": "sha256-3FToCkImRdH3FsWIj6fu828+VQS0Wzsh1sF8f6glDiU="
+  },
+  "kitchen/kitchen.gltf": {
+    "host": "raw",
+    "hash": "sha256-elZVyxnCFOldDJnJjSkxfqeW719c+HeYCq/TV4evchI="
+  },
+  "living-room-2/README": {
+    "host": "raw",
+    "hash": "sha256-xseGsNfcN4YHBrftjAVxrM1cxqKKZUjtpb4JajyKmHo="
+  },
+  "living-room-2/baseColor_1.jpg": {
+    "host": "media",
+    "hash": "sha256-ZjjcVJyUPgZE1Fc3LH9dvAtt5QBiF7tTiUgurdnZ0eM="
+  },
+  "living-room-2/baseColor_10.jpg": {
+    "host": "media",
+    "hash": "sha256-DOuIZHqxmxl+dpdvJUfQrlpH6L76RaQn8w32J8wFw1U="
+  },
+  "living-room-2/baseColor_11.jpg": {
+    "host": "media",
+    "hash": "sha256-C6gbZUAQJL3j7SMcvg2lNvrwqH7nvAbNtNXk6i5NMf0="
+  },
+  "living-room-2/baseColor_12.jpg": {
+    "host": "media",
+    "hash": "sha256-bckoT+kCXnIjEuZ33uJftj6kV02Jsr38YOFwB10AQKE="
+  },
+  "living-room-2/baseColor_13.jpg": {
+    "host": "media",
+    "hash": "sha256-Kta39FEOcXOKAH4ZsGJVc3I0aukyj5wlZWNGE27i02s="
+  },
+  "living-room-2/baseColor_2.jpg": {
+    "host": "media",
+    "hash": "sha256-hbHJy4/Jzz98UuwgFBJ+A64oJkadHAyuGmPqdDkRW5I="
+  },
+  "living-room-2/baseColor_3.jpg": {
+    "host": "media",
+    "hash": "sha256-Gvx8SarApp4GPYOWMNAIBDaVCq8P/RjOBtgH4PBm9R0="
+  },
+  "living-room-2/baseColor_4.jpg": {
+    "host": "media",
+    "hash": "sha256-mmRudXNZg0jQkz19fQEge3EQEpUZjTds1NKjynXYg68="
+  },
+  "living-room-2/baseColor_5.jpg": {
+    "host": "media",
+    "hash": "sha256-nR22gMbGbL9Xode5svGD9NEaZV3li14cVyxr54ORyX8="
+  },
+  "living-room-2/baseColor_6.jpg": {
+    "host": "media",
+    "hash": "sha256-9ierJjX7KjegYp/NNhqOY2MNQoIElufnAS1pj3ssq/8="
+  },
+  "living-room-2/baseColor_7.jpg": {
+    "host": "media",
+    "hash": "sha256-TrWnFftQPneTlZjPrSQ+QTWpqWynSlATUtfO85eglqc="
+  },
+  "living-room-2/baseColor_8.jpg": {
+    "host": "media",
+    "hash": "sha256-jckI6T+dt1Bmn8DzVCg97tGb77Q7/v5ppkXwTHP/weU="
+  },
+  "living-room-2/baseColor_9.jpg": {
+    "host": "media",
+    "hash": "sha256-uQ3fIJVQGsaFD6XoqPZry50HkmgH/wIWnjNK/oho0AQ="
+  },
+  "living-room-2/living-room-2.bin": {
+    "host": "media",
+    "hash": "sha256-gEodpsx3haRH0Fsavh55YWx9f1Btekb9jjsbqBXRwMQ="
+  },
+  "living-room-2/living-room-2.gltf": {
+    "host": "raw",
+    "hash": "sha256-/sKfB6tQttMG0fWOjwpOhNJ3ejh+uUabh7Kh4J5M6Wg="
+  },
+  "living-room-3/README": {
+    "host": "raw",
+    "hash": "sha256-8wBZcxnJ0P4rsOkypyEjJS4MQh4xQTIBfu7A7A8/Y8E="
+  },
+  "living-room-3/baseColor_1.jpg": {
+    "host": "media",
+    "hash": "sha256-XVvX9hINiq/MbRpjWFPN/ssjKh7nRpE8/wap/PuEx9k="
+  },
+  "living-room-3/baseColor_2.jpg": {
+    "host": "media",
+    "hash": "sha256-fZn6ZtmZLj4hXxIs3+GNg92S/hS24ybc5MLnDztD62s="
+  },
+  "living-room-3/baseColor_3.jpg": {
+    "host": "media",
+    "hash": "sha256-oCq+/P2QJjFJiM/Td2uOhvyGc8faurjGTw1epClDCL0="
+  },
+  "living-room-3/living-room-3.bin": {
+    "host": "media",
+    "hash": "sha256-gkbVE7sDtFS9IltaSLWUuaeo9uUp9Pmb5vPBrqoceeo="
+  },
+  "living-room-3/living-room-3.gltf": {
+    "host": "raw",
+    "hash": "sha256-SDzHeg+sdA2alVOt4txm/MP1ImutxmLQkjl+LrLABwM="
+  },
+  "sponza/README": {
+    "host": "raw",
+    "hash": "sha256-6am/fc4pl0Nu+dkZ2kVlRas2vMRD+DJYuR/otHq881k="
+  },
+  "sponza/baseColor_1.png": {
+    "host": "media",
+    "hash": "sha256-CAu2NRsvVZgx4NIvprpP3mELPJ5A/x0vk9RSv17Ts7w="
+  },
+  "sponza/baseColor_10.jpg": {
+    "host": "media",
+    "hash": "sha256-1PDEie7famXlRnIU04eKXAGCvtJc/LAA7nbMMm+pMIg="
+  },
+  "sponza/baseColor_11.jpg": {
+    "host": "media",
+    "hash": "sha256-MGa/jGR9J8FAZv2faasZYg2nJAMTtRZPgnS+ehqbUYA="
+  },
+  "sponza/baseColor_12.jpg": {
+    "host": "media",
+    "hash": "sha256-VUgPx845zKG+Vuqe9u5mRtemOPp2zGvNQ2fNfytpecY="
+  },
+  "sponza/baseColor_13.png": {
+    "host": "media",
+    "hash": "sha256-hqzSkzbui8HYulPAYGJooq6LknKNTa7uia6z6dZPIUg="
+  },
+  "sponza/baseColor_14.jpg": {
+    "host": "media",
+    "hash": "sha256-rGPQNws6DHkfn1HH2G56lzYmXpB+mTZM+XDbgsAIl3c="
+  },
+  "sponza/baseColor_15.jpg": {
+    "host": "media",
+    "hash": "sha256-0NoU1TtLSGgFIvPX/rY6r8dvDc/FPufLA5gC535QhXE="
+  },
+  "sponza/baseColor_16.jpg": {
+    "host": "media",
+    "hash": "sha256-DAeb6tEEAu0hpByq1nx+/SnjI3EYGCgdAlZR+8XiCDs="
+  },
+  "sponza/baseColor_17.jpg": {
+    "host": "media",
+    "hash": "sha256-54qZJ4BW3Wff3k6fJgxsbdu3Mk1Lyszt88+371eMBBc="
+  },
+  "sponza/baseColor_18.jpg": {
+    "host": "media",
+    "hash": "sha256-WSjVu54U/6RrMuO23L0cV4z01DJ/xCZAeqRxj73Uv20="
+  },
+  "sponza/baseColor_19.jpg": {
+    "host": "media",
+    "hash": "sha256-RJJxnDLhslyll2PowNdQvn15DIpNeljLELpuAHy68aA="
+  },
+  "sponza/baseColor_2.png": {
+    "host": "media",
+    "hash": "sha256-M52wU1m9UyHqR+UF3/t3Ce9J8gaxI4P0r9BBU27wDjs="
+  },
+  "sponza/baseColor_20.jpg": {
+    "host": "media",
+    "hash": "sha256-MJIJd9tTl5OCdKjhynegWcMsOFRdSje7HFT+CfjWboo="
+  },
+  "sponza/baseColor_21.png": {
+    "host": "media",
+    "hash": "sha256-kYuR3bkhfB8l6tKszFrfafSZLKMSQBiDqS/jss4m/FI="
+  },
+  "sponza/baseColor_22.jpg": {
+    "host": "media",
+    "hash": "sha256-sp+pIhQbZZh/SIA6MMTSZjG4nY/VveX6SDOYGHEGXOc="
+  },
+  "sponza/baseColor_23.jpg": {
+    "host": "media",
+    "hash": "sha256-InVJ3OfRL83hntJdmPXDvZbh9ms7KfUZ+RolMugMPeM="
+  },
+  "sponza/baseColor_24.jpg": {
+    "host": "media",
+    "hash": "sha256-dynbbzBrvopugExJgTvnp6pG834ZiYy+1D6q3lPAIME="
+  },
+  "sponza/baseColor_25.jpg": {
+    "host": "media",
+    "hash": "sha256-t3SlRxG+69Gg1rS0GNqn8QEifeK/RVZ9z8YxLYbiI5I="
+  },
+  "sponza/baseColor_3.jpg": {
+    "host": "media",
+    "hash": "sha256-GzX6u0JA/XMlFEBXo6/BQxtyBwtfOdiuoP/Zec/0cNs="
+  },
+  "sponza/baseColor_4.jpg": {
+    "host": "media",
+    "hash": "sha256-KVVBKhoddz9FtvvCXEwBM6Q4Yv+wjT1Bps2JWibIfN4="
+  },
+  "sponza/baseColor_5.jpg": {
+    "host": "media",
+    "hash": "sha256-V3bdxmq/LbmXc6b0oFso2HQZgzjPdYyMZrOY1e/1Ra4="
+  },
+  "sponza/baseColor_6.jpg": {
+    "host": "media",
+    "hash": "sha256-vWmpQbEHwT44guiOQXBK1sd8ooW4KglFNrJvtfi1yDE="
+  },
+  "sponza/baseColor_7.jpg": {
+    "host": "media",
+    "hash": "sha256-X1MLRBZk5Hf2iaawve+Dy5I9gjtDm8k1x0Q47ZCwSFc="
+  },
+  "sponza/baseColor_8.jpg": {
+    "host": "media",
+    "hash": "sha256-2ggQtX+mZWiJvznVa2M642qr5ZlGe1vhfxPyIQWd5IQ="
+  },
+  "sponza/baseColor_9.jpg": {
+    "host": "media",
+    "hash": "sha256-IziYHI2y62tzAqgmeN7RaaYPTFKPHpsx2prJC15ZIm4="
+  },
+  "sponza/metallicRoughness_1.jpg": {
+    "host": "media",
+    "hash": "sha256-ZV4FkIc7TSG1R7kSM14S0Irtyqduzf+2kHR1oNVpqS0="
+  },
+  "sponza/metallicRoughness_10.jpg": {
+    "host": "media",
+    "hash": "sha256-jZP2fVPB6j2kVXrKdfCV4Piwk1UNg6L3hLTbECZyH20="
+  },
+  "sponza/metallicRoughness_11.jpg": {
+    "host": "media",
+    "hash": "sha256-ZgRP0HEUH6fwY3gjF1tiVg5Fy1aKdPT+Iz9YQLcYqTU="
+  },
+  "sponza/metallicRoughness_12.jpg": {
+    "host": "media",
+    "hash": "sha256-U86aNUsdS6JBuQXYSYd9rsCoqepvo5qh2qkxWd8uBrY="
+  },
+  "sponza/metallicRoughness_13.jpg": {
+    "host": "media",
+    "hash": "sha256-x5Wo60w7FVwrLzwndYn3HfB/ijQ0A0GgMdgLBMtTsJA="
+  },
+  "sponza/metallicRoughness_14.jpg": {
+    "host": "media",
+    "hash": "sha256-WWYe+lpRdt+oHDKmLNtL5/o6/4+RB8aSq3yCPMak3tA="
+  },
+  "sponza/metallicRoughness_15.jpg": {
+    "host": "media",
+    "hash": "sha256-sH36Fl4si8WpQoKL9D3bFK+l7FV/0UdXr0j/A0D9DiU="
+  },
+  "sponza/metallicRoughness_16.jpg": {
+    "host": "media",
+    "hash": "sha256-rpzhJb2Q8kcPH8aGvtud/gUsEQ5UfP+/a2PT0xiUHKw="
+  },
+  "sponza/metallicRoughness_17.jpg": {
+    "host": "media",
+    "hash": "sha256-o/fwx0iBoksOulyxlBenPv7jizj5DdeFU00ohol2mKI="
+  },
+  "sponza/metallicRoughness_18.jpg": {
+    "host": "media",
+    "hash": "sha256-1SwmALIC3+gy5fQktnPKkMSA96CZBQd7VjokHNmkKcI="
+  },
+  "sponza/metallicRoughness_19.jpg": {
+    "host": "media",
+    "hash": "sha256-NJzmuN5A6s1yHwslffugqb7Y30rsb7nnBPbwskBe6WY="
+  },
+  "sponza/metallicRoughness_2.jpg": {
+    "host": "media",
+    "hash": "sha256-6Kg6pY5oy16cCeSis8+ztNcmuRyqqR++JPEpRDPO7mw="
+  },
+  "sponza/metallicRoughness_20.jpg": {
+    "host": "media",
+    "hash": "sha256-yrsomxknFruYKEuqaZ2iWMfyIxkJVIVRF/a/cRre5o8="
+  },
+  "sponza/metallicRoughness_3.jpg": {
+    "host": "media",
+    "hash": "sha256-k9DMR3o0Ct83/Pe4CG75QcSAGmP+TLbUH6F+b/agFwk="
+  },
+  "sponza/metallicRoughness_4.jpg": {
+    "host": "media",
+    "hash": "sha256-ml+0bwJ4V4w4NGPjU0aLjjmwHGF8TU/7NK2S1FBxNRU="
+  },
+  "sponza/metallicRoughness_5.jpg": {
+    "host": "media",
+    "hash": "sha256-s+SDPH3AKH93FT6o1GGzJtdRjV+oA860EVMjKigqU2k="
+  },
+  "sponza/metallicRoughness_6.jpg": {
+    "host": "media",
+    "hash": "sha256-j8BeUI+ZwP6XWRqp2l4+AyKAzie499dA2osCvf6fUC0="
+  },
+  "sponza/metallicRoughness_7.jpg": {
+    "host": "media",
+    "hash": "sha256-EpxOj0R5DpGL+sGGjsqa0MlnoTI9aY+5h7jCH0/U4xc="
+  },
+  "sponza/metallicRoughness_8.jpg": {
+    "host": "media",
+    "hash": "sha256-gkNKlndPGjqEp0V4Q5bKtU38ynGtvtPqIAYEN42J3mI="
+  },
+  "sponza/metallicRoughness_9.jpg": {
+    "host": "media",
+    "hash": "sha256-6cM6hWtX/rTfdJFFC6gLya3JwxeniBiOZ03CIdBirY0="
+  },
+  "sponza/normal_1.jpg": {
+    "host": "media",
+    "hash": "sha256-RjqkkuY8STZk8uSijVaMTSF/gGjLFnFwQYQ0ESsQ2ys="
+  },
+  "sponza/normal_10.jpg": {
+    "host": "media",
+    "hash": "sha256-Vh/uq+1X+AgkA5uEnW/lSRlhd/CVNEdXXaHj600RnIc="
+  },
+  "sponza/normal_11.jpg": {
+    "host": "media",
+    "hash": "sha256-rfxHz0/hIya3yI1VXz4h2uEsTQYEdBkZrrok3wfElQY="
+  },
+  "sponza/normal_12.jpg": {
+    "host": "media",
+    "hash": "sha256-6SteKYGLu+K+TaxurNGFDJLQ2o14ewBXACZdHRRE3eA="
+  },
+  "sponza/normal_13.jpg": {
+    "host": "media",
+    "hash": "sha256-l6R0DSR404a47jnbltZ7/3nyLhsN/buPl9suhggayAQ="
+  },
+  "sponza/normal_14.jpg": {
+    "host": "media",
+    "hash": "sha256-2Tk9fjSR+eJm8p7bYz0vN/ZIb7/01T/7gyIzGVtObhs="
+  },
+  "sponza/normal_15.jpg": {
+    "host": "media",
+    "hash": "sha256-2Tk9fjSR+eJm8p7bYz0vN/ZIb7/01T/7gyIzGVtObhs="
+  },
+  "sponza/normal_16.jpg": {
+    "host": "media",
+    "hash": "sha256-2Tk9fjSR+eJm8p7bYz0vN/ZIb7/01T/7gyIzGVtObhs="
+  },
+  "sponza/normal_17.jpg": {
+    "host": "media",
+    "hash": "sha256-f9YdV9KtAD0pL3VSuZlDI4/ahQOE6uY+d83reKqBH0Y="
+  },
+  "sponza/normal_18.jpg": {
+    "host": "media",
+    "hash": "sha256-f9YdV9KtAD0pL3VSuZlDI4/ahQOE6uY+d83reKqBH0Y="
+  },
+  "sponza/normal_19.jpg": {
+    "host": "media",
+    "hash": "sha256-f9YdV9KtAD0pL3VSuZlDI4/ahQOE6uY+d83reKqBH0Y="
+  },
+  "sponza/normal_2.jpg": {
+    "host": "media",
+    "hash": "sha256-xOpwQvi4Qerfw/rNkJar+ElYOhCI2GYSoSy0JU9Zx8g="
+  },
+  "sponza/normal_20.jpg": {
+    "host": "media",
+    "hash": "sha256-ZyeQ+G93Sra9JLZLvETk5SjtJgg1ws31NU7Hkh+vtfc="
+  },
+  "sponza/normal_21.jpg": {
+    "host": "media",
+    "hash": "sha256-nCzbzHfcm2rheyMihmqm1upaE2A1V+a5Nb9K4Zq3nx8="
+  },
+  "sponza/normal_22.jpg": {
+    "host": "media",
+    "hash": "sha256-RuYOdbKKsnT5Vh6Ayv5ZjNpq8N5Rj8DXwr2u3AuaD6E="
+  },
+  "sponza/normal_23.jpg": {
+    "host": "media",
+    "hash": "sha256-T61G6B36Y/GdvrDDOP/tKKDOP6mg3FtL7scyU1eiCbo="
+  },
+  "sponza/normal_24.jpg": {
+    "host": "media",
+    "hash": "sha256-18bG7QQKR6xwCRDoP30LoHu1zpdQB1R6DlQ23f2nBxY="
+  },
+  "sponza/normal_3.jpg": {
+    "host": "media",
+    "hash": "sha256-lYsegYKTlhTgeGXgLOrjIX+7nghl1lxfr8cC7FGM8oU="
+  },
+  "sponza/normal_4.jpg": {
+    "host": "media",
+    "hash": "sha256-RcbraCr4atH/Ua8+/G4X7LehlDUrYtt4PcJEz8KLh5g="
+  },
+  "sponza/normal_5.jpg": {
+    "host": "media",
+    "hash": "sha256-zplP14A6+TF1hAiizScZusL8ryLXAhp/D3p1cvigNcA="
+  },
+  "sponza/normal_6.jpg": {
+    "host": "media",
+    "hash": "sha256-7YjQGb1eKhvnFqTfb73wyUUOpZZfTCv+Ef84oiCG/NI="
+  },
+  "sponza/normal_7.jpg": {
+    "host": "media",
+    "hash": "sha256-XIRM9PHC6WcV1rrtSN3W1qJKLIOIZVAIaCwUcLIEPWs="
+  },
+  "sponza/normal_8.jpg": {
+    "host": "media",
+    "hash": "sha256-SlMNxdXu9A3CAR2oqOgk5w7+dX4ho2/rzwtOQCCG4GU="
+  },
+  "sponza/normal_9.jpg": {
+    "host": "media",
+    "hash": "sha256-pYMjQotNad9IhW+0m4rUlgQaUOAKxvqXVcjrQjk12MI="
+  },
+  "sponza/sponza.bin": {
+    "host": "media",
+    "hash": "sha256-ICQselnG6hKXj0+k+NvAGvpdUjqR8+iGOn/Hle1ypp8="
+  },
+  "sponza/sponza.gltf": {
+    "host": "raw",
+    "hash": "sha256-u3vns/oUJixRYR8FIMIKzjt6qZDkF41xx/Yu1SE4vFc="
+  },
+  "staircase/README": {
+    "host": "raw",
+    "hash": "sha256-66icWkIkPSz00B/MJKXIqWp1N6YZTNFPCWESqOR7mEE="
+  },
+  "staircase/baseColor_1.jpg": {
+    "host": "media",
+    "hash": "sha256-myZFtSECAMdBZkWnW9RG4ue6QcAwxSktvR5HWsn797U="
+  },
+  "staircase/baseColor_2.jpg": {
+    "host": "media",
+    "hash": "sha256-unkcl0FGxEiPcyduMJSSLjsKE+28wFz5rq/dMzs+hWM="
+  },
+  "staircase/baseColor_3.jpg": {
+    "host": "media",
+    "hash": "sha256-h3w0dgqzRl2ueUNFbrVi3boZDPXhKCiPFROgiqZifdM="
+  },
+  "staircase/baseColor_4.jpg": {
+    "host": "media",
+    "hash": "sha256-/OtcBcm6baMKrZoYsSImR/T4NJ0wQf5LEPD5yhBrZqs="
+  },
+  "staircase/baseColor_5.jpg": {
+    "host": "media",
+    "hash": "sha256-kWMkmQdz6sSxhSu6nhlF5+Wu479l+d9UmYk450+vT7A="
+  },
+  "staircase/baseColor_6.jpg": {
+    "host": "media",
+    "hash": "sha256-szfqCng5YSHlM46Gd0qWGNlxSd6gIY+hZJv1g9lRafo="
+  },
+  "staircase/baseColor_7.jpg": {
+    "host": "media",
+    "hash": "sha256-3A70vkI4jb9NON5KKYQ3dILlgow5ArFRGnZEPMEiGwU="
+  },
+  "staircase/baseColor_8.jpg": {
+    "host": "media",
+    "hash": "sha256-Di3z8+fwWoOAdfxrlPZdGTvXigPj0SMaE48cQto1jSg="
+  },
+  "staircase/baseColor_9.jpg": {
+    "host": "media",
+    "hash": "sha256-Hlyc9OZV5YF7eOtgIlTdZITHUG48N8qMe3t3NNOzgtU="
+  },
+  "staircase/staircase.bin": {
+    "host": "media",
+    "hash": "sha256-2c3+lNWiAgtFJHJ0AZNcfDIfDPBxeAQv92JgpBrdEwM="
+  },
+  "staircase/staircase.gltf": {
+    "host": "raw",
+    "hash": "sha256-4GnUOaga9Xyw4wgLemfVlVFHItTJFz7BKCN/wRtNaSc="
+  }
+}

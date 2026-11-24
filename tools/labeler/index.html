@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frame Hand Labeler</title>
+  <link rel="stylesheet" href="/editor.css">
+  <script type="module" src="/editor.js"></script>
+</head>
+<body>
+  <header class="appbar">
+    <div><h1>Frame Hand Labeler</h1><span id="take"></span></div>
+    <button id="reload" type="button">Reload labels</button>
+  </header>
+  <main>
+    <section class="viewer" aria-label="Camera and clip timeline">
+      <nav id="cameras" aria-label="Tracking camera"></nav>
+      <div class="stage">
+        <canvas id="image" aria-label="Tracking image. Drag a box around the selected hand."></canvas>
+        <div class="image-feedback">
+          <span id="image-status" role="status"></span>
+          <button id="retry" type="button" hidden>Retry image</button>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="transport">
+          <button id="previous" type="button" aria-label="Previous frame">←</button>
+          <button id="next" type="button" aria-label="Next frame">→</button>
+          <output id="position" for="frame"></output>
+        </div>
+        <div class="scrubber">
+          <input id="frame" type="range" min="0" step="1" value="0" aria-label="Frame group">
+          <canvas id="coverage" aria-hidden="true"></canvas>
+        </div>
+        <div class="range-actions">
+          <button id="set-first" type="button" title="Set range start to this group">Set in</button>
+          <button id="set-last" type="button" title="Set range end to this group">Set out</button>
+          <button id="whole" type="button">Whole clip</button>
+          <span class="legend"><i class="seed"></i> Seed <i class="proposed"></i> Proposal <i class="reviewed"></i> Reviewed</span>
+        </div>
+      </div>
+    </section>
+    <aside aria-label="Tracking and review">
+      <section class="panel review">
+        <div class="section-title"><h2>Hand labels</h2><button id="undo" type="button" disabled>Undo</button></div>
+        <div id="hands" class="segments" aria-label="Hand to label"></div>
+        <p class="hint">Drag a box on the image to seed SAM for this hand and camera.</p>
+        <dl id="labels"></dl>
+        <div class="actions">
+          <button id="accept" disabled class="accent" type="button">Accept + next</button>
+          <button id="next-proposal" disabled type="button">Next proposal</button>
+          <button id="absent" disabled type="button">Mark absent</button>
+          <button id="unknown" disabled type="button">Mark unknown</button>
+        </div>
+        <p id="status" role="status"></p>
+      </section>
+
+      <section class="panel models">
+        <div class="section-title"><h2>Clip tools</h2><button id="unreviewed" type="button" disabled>Next unlabeled</button></div>
+        <div id="sources" class="segments" aria-label="Model and proposal source">
+          <button id="source-sam" type="button" aria-pressed="true">SAM 3.1 tracking</button>
+          <button id="source-terra" type="button" aria-pressed="false">Terra review</button>
+        </div>
+        <form id="model-form">
+          <div class="fields">
+            <label>First group <input id="first" type="number" min="1" step="1" value="1" required></label>
+            <label>Last group <input id="last" type="number" min="1" step="1" value="1" required></label>
+          </div>
+          <fieldset id="sam-settings">
+            <label>Cameras
+              <select id="sam-cameras"><option value="current">Current camera</option><option value="all">All cameras</option></select>
+            </label>
+            <div class="fields">
+              <label>Radius (groups) <input id="radius" type="number" min="1" step="1" value="30" required></label>
+              <label>Device
+                <select id="device"><option value="auto">Auto</option><option value="cuda">GPU</option><option value="cpu">CPU</option></select>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset id="terra-settings" hidden disabled>
+            <label>Review rate (frames/sec) <input id="hz" type="number" min="0.001" step="any" value="10" required></label>
+            <p class="hint">Sends sampled camera images to GPT-6.1 Terra through your Codex login.</p>
+          </fieldset>
+          <p id="run-summary" class="hint"></p>
+          <div class="run-actions">
+            <button id="run-model" class="accent" type="submit" disabled>Run SAM 3.1</button>
+            <button id="stop-model" type="button" hidden>Stop</button>
+          </div>
+        </form>
+        <p id="job-state" role="status"></p>
+        <pre id="job-log" hidden></pre>
+      </section>
+      <p id="progress" class="hint"></p>
+    </aside>
+  </main>
+</body>
+</html>

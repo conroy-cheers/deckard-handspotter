@@ -1,0 +1,11 @@
+dataset = "dataset"
+out = "model"
+seed = 899
+device = "cuda"
+batch = 12
+threads = 3
+epochs = 12
+qat_epochs = 2
+brightness = 0.1
+recorded_fraction = 0.35
+resume = true

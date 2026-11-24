@@ -1,0 +1,1 @@
+../../lib/hot3d/hot3d_clip.py

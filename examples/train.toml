@@ -1,0 +1,15 @@
+dataset = "dataset"
+out = "model"
+device = "cpu" # Use cuda with either GPU package.
+seed = 899
+threads = 5
+batch = 24
+epochs = 12
+qat_epochs = 2
+rate = 0.001
+weight_decay = 0.006
+min_rate_ratio = 0.08
+qat_rate_ratio = 0.12
+brightness = 0.1
+# recorded_fraction = 0.5 # Optional weighted sampling of a mixed training split.
+resume = true

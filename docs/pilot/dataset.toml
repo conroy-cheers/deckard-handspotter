@@ -1,0 +1,46 @@
+[[recorded]]
+split = "training"
+workspace = "training-workspace"
+labels = "training.json"
+xrservice = "calibration/xrservice.json"
+device_config = "calibration/device_config.json"
+
+[[recorded]]
+split = "test"
+workspace = "test-workspace"
+labels = "test.json"
+xrservice = "calibration/xrservice.json"
+device_config = "calibration/device_config.json"
+
+[[synthetic]]
+split = "training"
+preset = "procedural"
+xrservice = "calibration/xrservice.json"
+device_config = "calibration/device_config.json"
+count = 192
+seed = 899
+face_size = 160
+appearance_variation = true
+capture_noise = true
+
+[[synthetic]]
+split = "validation"
+preset = "procedural"
+xrservice = "calibration/xrservice.json"
+device_config = "calibration/device_config.json"
+count = 32
+seed = 900
+face_size = 160
+appearance_variation = true
+capture_noise = true
+
+[[synthetic]]
+split = "test"
+preset = "procedural"
+xrservice = "calibration/xrservice.json"
+device_config = "calibration/device_config.json"
+count = 32
+seed = 901
+face_size = 160
+appearance_variation = true
+capture_noise = true
